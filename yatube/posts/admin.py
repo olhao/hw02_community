@@ -19,6 +19,7 @@ class PostAdmin(admin.ModelAdmin):
 
 admin.site.register(Post, PostAdmin)
 
+
 class GroupAdmin(admin.ModelAdmin):
     list_display = (
         'pk',
@@ -29,5 +30,6 @@ class GroupAdmin(admin.ModelAdmin):
     search_fields = ('title',)
     list_filter = ('title',)
     empty_value_display = '-пусто-'
+
 
 admin.site.register(Group)
