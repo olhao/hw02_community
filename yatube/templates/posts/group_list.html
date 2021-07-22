@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block title %}Записи сообщества{% endblock %}
 {% block content %}
-  <div class="container" href="{% url 'posts:group_list' group %}">
+  <div class="container" href="{% url 'posts:group_list' group.slug %}">
     <h1>{{ group.title }}</h1>
         <p>
           {{ group.description }}
